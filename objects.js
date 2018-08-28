@@ -5,5 +5,5 @@ const playlist = {
 }
 
 function updatePlaylist(playlist, artist, song) {
-  
+  artist in playlist ? playlist[artist].push(song) : playlist[artist] = [song];
 }
